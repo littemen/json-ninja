@@ -19,3 +19,28 @@ JSON Ninja is a powerful JavaScript library that simplifies JSON manipulation fo
 
 ```bash
 npm install json-ninja
+
+
+Then, in your JavaScript file, import the necessary functions like this:
+
+const { validateJSON, sortJSON, filterJSON, transformKeys, handleDates, ... } = require('json-ninja');
+
+// Example usage of functions
+const jsonData = {...}; // Your JSON data
+
+// Validate JSON
+const isValid = validateJSON(jsonData);
+
+// Sort JSON
+const sortedData = sortJSON(jsonData, 'key');
+
+// Filter JSON
+const filteredData = filterJSON(jsonData, (item) => item.key === 'value');
+
+// Transform Keys
+const transformedData = transformKeys(jsonData, (key) => key.toUpperCase());
+
+// Handle Dates
+const formattedDate = handleDates(new Date());
+
+// More JSON Ninja functions can be used similarly
